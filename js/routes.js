@@ -65,6 +65,10 @@ function selectRoute(route, btn) {
   routeVideo.removeAttribute("src");
   routeVideo.load();
 
+  routeVideo.onloadeddata = () => {
+  routeVideo.play().catch(() => {});
+};
+
   // iOS-safe settings
   routeVideo.muted = true;
   routeVideo.playsInline = true;

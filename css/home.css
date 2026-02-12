@@ -13,10 +13,15 @@ html {
   font-family: 'Inter';
   src: url(../fonts/Inter-VariableFont_opsz\,wght.ttf);
 }
+@font-face {
+  font-family: 'Futura';
+  src: url(../fonts/FuturaCyrillicBook.ttf);
+}
 
 
 body {
   color: #111;
+  font-family: 'Futura';
 }
 
 /* NAV BAR */
@@ -438,6 +443,7 @@ body {
   text-decoration: underline;
   -webkit-appearance: none;
   appearance: none;
+  font-family: 'Futura';
 }
 
 .face-link.active {

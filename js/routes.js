@@ -50,7 +50,6 @@ function loadRoutes(face) {
   });
 }
 
-const routeVideoSource = document.getElementById("route-video-source");
 
 function selectRoute(route, btn) {
   document.querySelectorAll(".route-btn").forEach(b =>
@@ -62,10 +61,13 @@ function selectRoute(route, btn) {
   routeDesc.textContent = route.desc;
 
   routeVideo.pause();
-  routeVideoSource.src = route.video;
+
+  routeVideo.src = route.video;
+
   routeVideo.load();
+
   routeVideo.play().catch(err => {
-    console.log("Video play failed:", err);
+    console.log("Play failed:", err);
   });
 }
 

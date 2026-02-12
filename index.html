@@ -100,7 +100,7 @@
       </nav>
 
       <div class="route-info">
-        <p class="route-title" id="route-title">Route 1</h2>
+        <p class="route-title" id="route-title">Route 1</p>
         <p id="route-description">
           This is the description for Route 1.
         </p>
@@ -112,14 +112,17 @@
     </div>
     <!-- Right Column -->
     <div class="video-column">
-        <video
+      <video
+        id="route-video"
         autoplay
         muted
         loop
         playsinline
-      >
-        <source id="route-video-source" src="./vids/map_1.mp4" type="video/mp4">
+        webkit-playsinline
+        preload="auto"
+        src="./vids/map_1.mp4">
       </video>
+
     </div>
   </section>
 

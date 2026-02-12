@@ -60,14 +60,24 @@ function selectRoute(route, btn) {
   routeTitle.textContent = route.title;
   routeDesc.textContent = route.desc;
 
+  // Stop and reset video
   routeVideo.pause();
-
-  routeVideo.src = route.video;
-
+  routeVideo.removeAttribute("src");
   routeVideo.load();
 
+  // iOS-safe settings
+  routeVideo.muted = true;
+  routeVideo.playsInline = true;
+  routeVideo.setAttribute("playsinline", "");
+  routeVideo.setAttribute("webkit-playsinline", "");
+
+  // Set new source
+  routeVideo.src = route.video;
+  routeVideo.load();
+
+  // Try play
   routeVideo.play().catch(err => {
-    console.log("Play failed:", err);
+    console.log("Mobile autoplay blocked:", err);
   });
 }
 

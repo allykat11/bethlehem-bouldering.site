@@ -1,6 +1,6 @@
 const routeData = {
   left: [
-    { id: 1, title: "01. Dark Side 6a (Jacob) ss ⭐⭐⭐", desc: "A nice warmup. Start on obvious jug with bad feet and traverse around the corner on underclings. Spicy finish!", video: "./vids/map_1.mp4" },
+    { id: 1, title: "01. Dark Side 6a (Jacob) ss ⭐⭐⭐", desc: "A nice warmup. Start on obvious jug with bad feet and traverse around the corner on underclings. Spicy finish!", video: "./vids/map1_1.mp4" },
     { id: 2, title: "02. Font 6b 7a (Jeremy) ss ⭐⭐", desc: "Start as for Dark Side. Do a hard move to a crimp and mantel out right.", video: "./vids/map2_1.mp4" },
     { id: 3, title: "03. Golden Boy 7b+ (Dom) ⭐⭐", desc: "Morpho! Stand up on bad undercling and find the hold.", video: "./vids/map3_1.mp4" },
     { id: 4, title: "04. There is a spoon project ⭐", desc: "Jeremy has gotten close. Bad gaston in the overhang is the only hope. Start on the ledge.", video: "./vids/map4_1.mp4" },

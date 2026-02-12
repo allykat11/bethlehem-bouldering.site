@@ -643,6 +643,7 @@ body {
   .section {
     padding: 0%; 
     min-height: auto;
+    font-family: 'Futura';
   }
 
   /* NAV BAR */

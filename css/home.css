@@ -514,7 +514,6 @@ body {
 .video-column {
   width: 100%;
   height: 250px;  /* fixed height so video displays */
-  margin-bottom: 20px;
 }
 
 .video-column video {

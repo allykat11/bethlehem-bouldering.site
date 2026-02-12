@@ -20,8 +20,9 @@ html {
 }
 
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: "futura-pt", sans-serif;
   color: #111;
+
 }
 
 /* NAV BAR */

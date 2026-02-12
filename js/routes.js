@@ -28,13 +28,7 @@ const routeTitle = document.getElementById("route-title");
 const routeDesc = document.getElementById("route-description");
 const routeVideo = document.getElementById("route-video");
 
-routeVideo.addEventListener("click", () => {
-  if (routeVideo.requestFullscreen) {
-    routeVideo.requestFullscreen();
-  } else if (routeVideo.webkitEnterFullscreen) {
-    routeVideo.webkitEnterFullscreen(); // iOS Safari
-  }
-});
+
 
 let currentFace = "left";
 
@@ -102,3 +96,33 @@ document.querySelectorAll(".face-link").forEach(link => {
 });
 
 loadRoutes("left");
+
+const expandBtn = document.getElementById("expandBtn");
+const videoModal = document.getElementById("videoModal");
+const modalVideo = document.getElementById("modalVideo");
+const closeModal = document.getElementById("closeModal");
+
+// Open modal
+expandBtn.addEventListener("click", () => {
+  modalVideo.src = routeVideo.src;
+  modalVideo.load();
+  modalVideo.play().catch(() => {});
+  videoModal.classList.add("active");
+});
+
+// Close modal
+closeModal.addEventListener("click", () => {
+  videoModal.classList.remove("active");
+  modalVideo.pause();
+  modalVideo.src = "";
+});
+
+// Close when clicking outside video
+videoModal.addEventListener("click", (e) => {
+  if (e.target === videoModal) {
+    videoModal.classList.remove("active");
+    modalVideo.pause();
+    modalVideo.src = "";
+  }
+});
+

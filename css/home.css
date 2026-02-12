@@ -605,21 +605,84 @@ body {
     color: #aaaaaa;
   }
 
-  .video-column {
-    width: 100%;
-    position: relative;
-    padding-top: 125%; 
-  }
+.video-column {
+  width: 100%;
+  position: relative;
+  padding-top: 56.25%; /* 16:9 ratio */
+  margin-bottom: 0;
+}
 
-  .video-column video {
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+.video-column video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Expand button */
+.expand-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 5;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  border: none;
+  font-size: 18px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Modal overlay */
+.video-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 9999;
+}
+
+.video-modal.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* Modal content */
+.modal-content {
+  position: relative;
+  width: 90%;
+  max-width: 900px;
+}
+
+/* Keep natural aspect ratio */
+.modal-content video {
+  width: 100%;
+  height: auto;
+  max-height: 85vh;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+/* Close button */
+.close-modal {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  background: none;
+  color: white;
+  font-size: 28px;
+  border: none;
+  cursor: pointer;
+}
+
 }
 
 /*---------------------------------------------------------------------*/

@@ -64,7 +64,9 @@ function selectRoute(route, btn) {
   routeVideo.pause();
   routeVideoSource.src = route.video;
   routeVideo.load();
-  routeVideo.play().catch(() => {});
+  routeVideo.play().catch(err => {
+    console.log("Video play failed:", err);
+  });
 }
 
 document.querySelectorAll(".face-link").forEach(link => {

@@ -21,7 +21,7 @@ html {
 
 body {
   color: #111;
-  font-family: 'Futura';
+  font-family: 'Inter';
 }
 
 /* NAV BAR */
@@ -215,9 +215,10 @@ body {
   justify-content: center;
 }
 
-.text-column h2 {
+.details-title {
   margin-bottom: 12px;
-  font-size: 32px;
+  font-size: 60px;
+  letter-spacing: 0.03em;
 }
 
 .text-column a {
@@ -330,7 +331,6 @@ body {
 
 .nav-title {
   font-size: 32px;
-  font-weight: 600;
   letter-spacing: 0.03em;
   margin-bottom: 6px; 
 }
@@ -458,11 +458,12 @@ body {
   transform: translateY(-500px); 
 }
 
-.route-info h2 {
+.route-title {
   text-decoration: underline;
   margin-bottom: 16px;
   text-align: left;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.03em;
+  font-size: 20px;
 }
 
 /* VERTICAL ROUTE NAV */
@@ -786,11 +787,11 @@ body {
     flex: 0.7;
   }
 
-  .text-column h2 {
-    font-size: 36px;
+  .details-title{
+    font-size: 32px;
   }
 
-  .text-column p {
+  .subtitle {
     font-size: 17px;
     line-height: 1.7;
   }

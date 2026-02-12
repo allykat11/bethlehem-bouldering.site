@@ -46,7 +46,7 @@ body {
 }
 
 .nav-links {
-  font-family: 'Futura';
+  font-family: "futura-pt", sans-serif;
   list-style: none;
   display: flex;
   gap: 80px;
@@ -109,7 +109,7 @@ body {
 /* RESPONSIVE BACKGROUND IMAGE */
 @media (max-width: 768px) {
   .hero {
-    background-image: url("/imgs/mtn.png");
+    background-image: url("../imgs/mtn.png");
   }
 
   .nav-links {
@@ -209,7 +209,7 @@ body {
 
 /* Text column (Column 2) */
 .text-column {
-  font-family: 'Futura';
+  font-family: "futura-pt", sans-serif;
   letter-spacing: 0.03em;
   flex: 0.6;
   display: flex;
@@ -333,7 +333,7 @@ body {
 .nav-title {
   font-size: 32px;
   font-weight: 600;
-  font-family: 'Futura';
+  font-family: "futura-pt", sans-serif;
   letter-spacing: 0.03em;
   margin-bottom: 6px; 
 }
@@ -342,7 +342,7 @@ body {
 .nav-subtitle {
   font-size: 18px;
   font-weight: 400;
-  font-family: 'Futura';
+  font-family: "futura-pt", sans-serif;
   opacity: 0.8; 
 }
 
@@ -440,16 +440,20 @@ body {
 }
 
 .face-link {
+  color: #111;          /* force black */
   background: none;
-  font-family: 'Futura';
   border: none;
+  font-family: "futura-pt", sans-serif;
   font-size: 18px;
   cursor: pointer;
   text-decoration: underline;
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 .face-link.active {
   font-weight: bold;
+  color: #111;
 }
 
 .route-info {

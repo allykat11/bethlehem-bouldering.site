@@ -381,18 +381,12 @@ body {
   .navigation-section {
     min-height: auto;
   }
-}
 
-
-@media (max-width: 768px) {
   .map-gif {
     height: 45vh;
     min-height: 280px;
   }
-}
 
-
-@media (max-width: 768px) {
   .nav-title {
     font-size: 24px;
   }
@@ -515,9 +509,9 @@ body {
 
 /* VIDEO COLUMN */
 .video-column {
-  flex: 1;
-  height: 1080px;
-  background: #fff;
+  width: 100%;
+  height: 250px;  /* fixed height so video displays */
+  margin-bottom: 20px;
 }
 
 .video-column video {
@@ -526,7 +520,6 @@ body {
   object-fit: cover;
   display: block;
 }
-
 
 
 /* MOBILE LAYOUT FOR ROUTES SECTION */
@@ -541,6 +534,10 @@ body {
   .left-column {
     width: 100%;
     padding: 20px;
+  }
+
+  .page-title {
+    font-size: 24px;
   }
 
   .face-nav {
@@ -558,7 +555,7 @@ body {
   }
 
   .route-title {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .route-info {
@@ -608,7 +605,7 @@ body {
     background: #fff;
     color: #aaaaaa;
   }
-  
+
   .video-column {
     width: 100%;
   }
@@ -667,7 +664,7 @@ body {
     flex: 0.8; 
   }
 
-  .text-column h2 {
+  .details-title {
     font-size: 20px;
     font-family: "futura-pt", sans-serif;
   }

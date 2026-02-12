@@ -287,8 +287,8 @@ body {
     padding: 0 10px;     
   }
 
-    .text-column h2 {
-    font-size: 28px;     
+  .details-title {
+    font-size: 24px;     
     margin-bottom: 16px;
   }
 
@@ -557,10 +557,9 @@ body {
     padding: 4px 8px;
   }
 
-  .face-link.active {
-    font-weight: bold;
+  .route-title {
+    font-size: 24px;
   }
-
 
   .route-info {
     transform: translate(0px, 0px);

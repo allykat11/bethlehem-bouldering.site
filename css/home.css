@@ -290,6 +290,8 @@ body {
   .details-title {
     font-size: 24px;     
     margin-bottom: 16px;
+    margin-bottom: 20px; 
+    line-height: 1.6;
   }
 
   .text-column .subtitle {
@@ -297,11 +299,6 @@ body {
     margin-bottom: 12px;
   }
 
-  .text-column p {
-    font-size: 14px;
-    line-height: 1.6;
-    margin-bottom: 20px; 
-  }
 
   .details-arrows {
     display: none;       
@@ -459,6 +456,12 @@ body {
   font-size: 20px;
 }
 
+.route-description {
+  text-align: left;
+  font-size: 18px;
+
+}
+
 /* VERTICAL ROUTE NAV */
 .route-nav {
   width: 60px;
@@ -556,6 +559,8 @@ body {
 
   .route-title {
     font-size: 20px;
+    text-decoration: underline;
+    margin-bottom: 8px;
   }
 
   .route-info {
@@ -563,13 +568,7 @@ body {
   }
 
 
-  .route-info h2 {
-    font-size: 20px;
-    text-decoration: underline;
-    margin-bottom: 8px;
-  }
-
-  .route-info p {
+  .route-description {
     font-size: 14px;
     line-height: 1.5;
   }
@@ -608,6 +607,8 @@ body {
 
   .video-column {
     width: 100%;
+    height: auto;
+    margin-bottom: 0;
   }
 
   .video-column video {

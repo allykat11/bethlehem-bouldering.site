@@ -28,6 +28,14 @@ const routeTitle = document.getElementById("route-title");
 const routeDesc = document.getElementById("route-description");
 const routeVideo = document.getElementById("route-video");
 
+routeVideo.addEventListener("click", () => {
+  if (routeVideo.requestFullscreen) {
+    routeVideo.requestFullscreen();
+  } else if (routeVideo.webkitEnterFullscreen) {
+    routeVideo.webkitEnterFullscreen(); // iOS Safari
+  }
+});
+
 let currentFace = "left";
 
 function loadRoutes(face) {

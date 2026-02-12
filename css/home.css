@@ -14,17 +14,9 @@ html {
   src: url(../fonts/Inter-VariableFont_opsz\,wght.ttf);
 }
 
-@font-face {
-  font-family: 'Futura';
-  src: url(../fonts/FuturaCyrillicBook.ttf) format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
 
 body {
-  font-family: 'Futura';
   color: #111;
-
 }
 
 /* NAV BAR */
@@ -49,7 +41,6 @@ body {
 }
 
 .nav-links {
-  font-family: 'Futura';
   list-style: none;
   display: flex;
   gap: 80px;
@@ -212,7 +203,6 @@ body {
 
 /* Text column (Column 2) */
 .text-column {
-  font-family: 'Futura';
   letter-spacing: 0.03em;
   flex: 0.6;
   display: flex;
@@ -336,7 +326,6 @@ body {
 .nav-title {
   font-size: 32px;
   font-weight: 600;
-  font-family: 'Futura';
   letter-spacing: 0.03em;
   margin-bottom: 6px; 
 }
@@ -345,7 +334,6 @@ body {
 .nav-subtitle {
   font-size: 18px;
   font-weight: 400;
-  font-family: 'Futura';
   opacity: 0.8; 
 }
 
@@ -432,7 +420,6 @@ body {
 .page-title {
   font-size: 32px;
   margin-bottom: 24px;
-  font-family: 'Futura';
   letter-spacing: 0.03em;
 }
 
@@ -446,7 +433,6 @@ body {
   color: #111;          /* force black */
   background: none;
   border: none;
-  font-family: 'Futura';
   font-size: 18px;
   cursor: pointer;
   text-decoration: underline;
@@ -470,7 +456,6 @@ body {
   text-decoration: underline;
   margin-bottom: 16px;
   text-align: left;
-  font-family: 'Futura';
   letter-spacing: 0.05em;
 }
 
@@ -608,7 +593,6 @@ body {
     cursor: pointer;
     font-size: 16px;
     text-align: center;
-    font-family: 'Futura';
   }
 
   .route-btn:last-child {
@@ -645,7 +629,6 @@ body {
   .section {
     padding: 0%; 
     min-height: auto;
-    font-family: 'Futura';
   }
 
   /* NAV BAR */
@@ -726,14 +709,12 @@ body {
   }
 
   .page-title {
-    font-size: 20px;
-    font-family: "futura-pt", sans-serif;
+    font-size: 20px; 
   }
 
   .face-nav {
     gap: 20px;
     margin-bottom: 120px;
-    font-family: "futura-pt", sans-serif;
   }
 
   .route-nav {

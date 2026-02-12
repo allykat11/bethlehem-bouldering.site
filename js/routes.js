@@ -10,8 +10,8 @@ const routeData = {
     { id: 8, title: "08. Paddaman 7c+ (Ben) ss ⭐⭐⭐", desc: "The 👑 line! Start as Ladyboy and break into the middle of the face of the crimp. Finish straight up off a large move on the slopey gaston.", video: "./vids/map8_1.mp4" }
   ],
   main: [
-    { id: 5, title: "05. (main face) Ladyboy 7b (Jacob) ss ⭐⭐⭐", desc: "The best climb on the bloc! Sit start on the jug and climb straight up. Big committing move of a bad crimp to finish.", video: "./vids/map5 main_1.mp4" },
-    { id: 8, title: "08. (main face) Paddaman 7c+ (Ben) ss ⭐⭐⭐", desc: "The 👑 line! Start as Ladyboy and break into the middle of the face of the crimp. Finish straight up off a large move on the slopey gaston.", video: "./vids/map8 main_1.mp4" },
+    { id: 5, title: "05. (main face) Ladyboy 7b (Jacob) ss ⭐⭐⭐", desc: "The best climb on the bloc! Sit start on the jug and climb straight up. Big committing move of a bad crimp to finish.", video: "./vids/map5-main_1.mp4" },
+    { id: 8, title: "08. (main face) Paddaman 7c+ (Ben) ss ⭐⭐⭐", desc: "The 👑 line! Start as Ladyboy and break into the middle of the face of the crimp. Finish straight up off a large move on the slopey gaston.", video: "./vids/map8-main_1.mp4" },
     { id: 9, title: "09. Paddawan 7c (Jacob) ss ⭐", desc: "Climb as Paddaman until the final move and exit onto the right arete via thin holds and high heel. Easier but more committing than Paddaman.", video: "./vids/map9_1.mp4" },
     { id: 10, title: "10. Full Frontal 7c (Ben) ss ⭐⭐⭐", desc: "Start as Ladybug and pull into Paddaman via a large jug in the face.", video: "./vids/map10_1.mp4" },
     { id: 11, title: "11. Drag 7a (Jacob) ss ⭐", desc: "Start as Ladyboy and finish as Ladybug via the large jug in the face.", video: "./vids/map11_1.mp4" },

@@ -608,18 +608,14 @@ body {
     background: #fff;
     color: #aaaaaa;
   }
-
+  
   .video-column {
     width: 100%;
-    height: auto;        
-    margin: 0;             
   }
 
   .video-column video {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+    height: auto;
   }
 }
 
